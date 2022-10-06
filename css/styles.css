@@ -507,6 +507,43 @@ body {
   text-decoration: none;
 }
 
+.gallery-list-thumb {
+  position: relative;
+}
+
+.gallery-list-link:hover .gallery-list-thumb::before {
+  opacity: 1;
+}
+.gallery-list-link:hover .gallery-hover-text {
+  opacity: 1;
+}
+
+.gallery-list-thumb::before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+}
+
+.gallery-hover-text {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
 .gallery-list-link:hover,
 .gallery-list-link:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
