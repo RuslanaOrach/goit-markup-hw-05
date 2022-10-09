@@ -58,7 +58,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button-order" type="button">Замовити послугу</button>
+          <button class="button-order" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- Переваги -->
@@ -116,20 +116,29 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-examples-list list">
-            <li class="item"><img src="./images/img1.jpg" alt="computer" width="370" />
-            <div class="work-examples-thumb">
+            <li class="item">
+              <div class="work-examples-thumb">
+              <img src="./images/img1.jpg" alt="computer" width="370" />
+            <div class="work-examples-overlay">
               <h3 class="work-examples-text">Десктопні додатки</h3>
             </div>
+            </div>
           </li>
-            <li class="item"><img src="./images/img2.jpg" alt="phone and laptop" width="370" />
-            <div class="work-examples-thumb">
+            <li class="item">
+              <div class="work-examples-thumb">
+              <img src="./images/img2.jpg" alt="phone and laptop" width="370" />
+            <div class="work-examples-overlay">
               <h3 class="work-examples-text">Мобільні додатки</h3>
             </div>
+          </div>
           </li>
-            <li class="item"><img src="./images/img3.jpg" alt="ipad" width="370" />
-            <div class="work-examples-thumb">
+            <li class="item">
+              <div class="work-examples-thumb">
+              <img src="./images/img3.jpg" alt="ipad" width="370" />
+            <div class="work-examples-overlay">
               <h3 class="work-examples-text">Дизайнерські рішення</h3>
             </div>
+          </div>
           </li>
           </ul>
         </div>
@@ -404,5 +413,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close>
+          <svg width="11" hight="11">
+                  <use href="./images/symbol-defs.svg#icon-close-buttom"></use>
+                </svg>
+              </button>
+      </div>
+    </div>
+ <script src="./js/modal.js"></script>
   </body>
 </html>
