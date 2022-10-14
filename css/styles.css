@@ -153,7 +153,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  transition-property: color, background;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -182,7 +182,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  transition-property: color, background, box-shadow;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -334,25 +334,19 @@ body {
   position: relative;
 }
 
-.work-examples-overlay {
+.work-examples-text {
   position: absolute;
-
   height: 70px;
   width: 100%;
   bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: rgba(47, 48, 58, 0.8);
-}
-
-.work-examples-text {
-  padding-top: 27px;
-
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--white-color);
 }
 
@@ -462,7 +456,7 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4%;
 
-  transition-property: color, background, box-shadow;
+  transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -540,6 +534,9 @@ body {
   position: relative;
   display: block;
   text-decoration: none;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery-list-thumb {
@@ -568,7 +565,9 @@ body {
 
   opacity: 0;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery-overlay-text {
@@ -596,7 +595,7 @@ body {
   padding-bottom: 60px;
 }
 
-.footer-section .item:not(:last-child) {
+.address-part .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -612,7 +611,7 @@ body {
   line-height: 1.71;
   text-decoration: none;
 
-  transition-property: color, background;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -624,6 +623,9 @@ body {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-block {
@@ -669,7 +671,7 @@ body {
   color: var(--white-color);
   border-radius: 50%;
 
-  transition-property: color, background;
+  transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -750,10 +752,14 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   visibility: visible;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
